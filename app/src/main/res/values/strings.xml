@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BluetoothChatting</string>
+    <string name="open">Open Navigation Bar</string>
+    <string name="close">Close Navigation Bar</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EditProfile">
+    <TextView
+        android:id="@+id/editProfileText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Edit Your Profile"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#714CB8"
+        android:textStyle="bold"
+        android:text="Display Picture"
+        android:textSize="16sp"/>
+    <ImageView
+        android:id="@+id/profileImage11"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/user"/>
+
+    <Button
+        android:id="@+id/browzeid"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="230dp"
+        android:text="Browse"
+        android:background="#714CB8"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:id="@+id/table1">
+        <TableRow>
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="Full Name"
+                android:textStyle="bold"
+                android:textColor="#714CB8"
+                android:width="100dp"/>
+            <EditText
+                android:id="@+id/userName"
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textColorHint="#C7D0D6"
+                android:hint="Enter Full Name"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp"
+                android:background="#714CB8"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/displayname"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="Display Name"
+                android:textStyle="bold"
+                android:textColor="#714CB8"
+                />
+            <EditText
+                android:id="@+id/displayName"
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:hint="Enter Display Name"
+                android:textColor="@color/white"
+                android:textColorHint="#C7D0D6"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="#714CB8"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/table1"
+            >
+
+            <Button
+                android:id="@+id/cancell"
+                android:layout_width="wrap_content"
+                android:textColor="#714CB8"
+                android:background="@color/white"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#714CB8"
+                android:onClick="onClick"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+</RelativeLayout>

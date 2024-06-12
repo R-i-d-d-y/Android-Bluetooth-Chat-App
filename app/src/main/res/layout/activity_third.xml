@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A468DF"
+    android:orientation="vertical"
+    android:id="@+id/drawerlayout"
+    tools:context=".ThirdActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/toolbarshape">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/backid"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="-11dp"
+                android:layout_centerInParent="true"
+                android:background="#C38CFA"
+                android:src="@drawable/back1" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user"
+                android:layout_toRightOf="@id/imagebuttonid"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/appid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profileid"
+                android:text="No Name"
+                android:layout_marginLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imagebuttonid"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/backid"
+                android:background="#C38CFA"
+                android:src="@drawable/profilemenu"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/logoid"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/logonew" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <!-- <androidx.appcompat.widget.Toolbar
+             android:id="@+id/toolbar3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/toolbar2">
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Device Name: "
+                     android:textColor="#FFFFFF"
+                     android:textSize="18dp"
+                     android:textStyle="bold" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Samsung "
+                     android:textColor="#FFFFFF"
+                     android:textSize="18dp"
+                     android:textStyle="bold" />
+
+             </LinearLayout>
+
+             <ImageView
+                 android:id="@+id/renamebuttonid"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_gravity="end"
+                 android:layout_marginRight="20dp"
+                 android:src="@drawable/rename"
+                 app:tint="@color/white" />
+
+         </androidx.appcompat.widget.Toolbar>
+     -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar4"
+        android:layout_below="@+id/toolbar2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Bluetooth  "/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchid"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-11dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="12dp"
+            android:text="Status"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/status">
+
+
+        <Button
+            android:id="@+id/listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Listen"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#DCB7E6"
+            android:listSelector="#D890EC"
+            android:layout_below="@+id/listen"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="31dp" />
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="Message"
+            android:background="#DBB6E5"
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorLink"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/writemsg"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/listen"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="18dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/writemsg"
+        android:layout_alignEnd="@+id/list2"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="22dp"
+        android:text="Send" />
+
+    <Button
+            android:id="@+id/listDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/listview"
+            android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/listen"
+            android:text="List Devices" />
+
+
+</RelativeLayout>
+
+
+        <!--  <Button
+              android:id="@+id/paired"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/toolbar4"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginStart="10dp"
+              android:layout_marginTop="50dp"
+              android:background="#EEECFE"
+              android:text="Paired Devices"
+              android:textAllCaps="false"
+              android:textColor="#8C2BE1"
+              android:textSize="18dp"
+              android:textStyle="bold" />
+
+          <ListView
+              android:id="@+id/listid"
+              android:layout_width="200dp"
+              android:layout_height="350dp"
+              android:layout_below="@id/toolbar4"
+              android:layout_marginTop="109dp" />
+          <Button
+              android:id="@+id/scan"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/toolbar4"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="50dp"
+              android:background="#EEECFE"
+              android:text="Scan"
+              android:textAllCaps="false"
+              android:textColor="#8C2BE1"
+              android:textSize="18dp"
+              android:textStyle="bold" />
+
+          <ListView
+              android:id="@+id/listid2"
+              android:layout_width="200dp"
+              android:layout_height="300dp"
+              android:layout_alignParentRight="true"
+              android:layout_below="@id/toolbar4"
+              android:layout_marginTop="109dp" />
+              -->
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationid"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/navigation">
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
